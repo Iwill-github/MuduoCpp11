@@ -1,0 +1,37 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++-11 生成活动文件",
+			"command": "/usr/bin/g++-11",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}",
+				"-lmuduo_net",
+				"-lmuduo_base",
+				"-lpthread"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "编译器: /usr/bin/g++-11"
+		}
+	]
+}
+
+
+
+// gcc -I 头文件搜索路径 -Ll 库文件搜索路径 -l 库文件名 -o 输出文件名 源文件名
+// 默认的头文件搜索路径：/usr/include      /user/local/include
+// 默认的库文件搜索路径：/usr/lib          /user/local/lib
+// 默认的输出文件名：a.out
+// 默认的源文件名：main.cpp
+

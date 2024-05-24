@@ -1,0 +1,104 @@
+[
+{
+  "directory": "/home/iwill/wly/MuduoCpp11/build",
+  "command": "/usr/bin/g++ -Dmuduocpp11_EXPORTS -I/home/iwill/wly/MuduoCpp11/include  -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/muduocpp11.dir/src/Acceptor.cc.o -c /home/iwill/wly/MuduoCpp11/src/Acceptor.cc",
+  "file": "/home/iwill/wly/MuduoCpp11/src/Acceptor.cc",
+  "output": "CMakeFiles/muduocpp11.dir/src/Acceptor.cc.o"
+},
+{
+  "directory": "/home/iwill/wly/MuduoCpp11/build",
+  "command": "/usr/bin/g++ -Dmuduocpp11_EXPORTS -I/home/iwill/wly/MuduoCpp11/include  -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/muduocpp11.dir/src/Buffer.cc.o -c /home/iwill/wly/MuduoCpp11/src/Buffer.cc",
+  "file": "/home/iwill/wly/MuduoCpp11/src/Buffer.cc",
+  "output": "CMakeFiles/muduocpp11.dir/src/Buffer.cc.o"
+},
+{
+  "directory": "/home/iwill/wly/MuduoCpp11/build",
+  "command": "/usr/bin/g++ -Dmuduocpp11_EXPORTS -I/home/iwill/wly/MuduoCpp11/include  -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/muduocpp11.dir/src/Channel.cc.o -c /home/iwill/wly/MuduoCpp11/src/Channel.cc",
+  "file": "/home/iwill/wly/MuduoCpp11/src/Channel.cc",
+  "output": "CMakeFiles/muduocpp11.dir/src/Channel.cc.o"
+},
+{
+  "directory": "/home/iwill/wly/MuduoCpp11/build",
+  "command": "/usr/bin/g++ -Dmuduocpp11_EXPORTS -I/home/iwill/wly/MuduoCpp11/include  -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/muduocpp11.dir/src/CurrentThread.cc.o -c /home/iwill/wly/MuduoCpp11/src/CurrentThread.cc",
+  "file": "/home/iwill/wly/MuduoCpp11/src/CurrentThread.cc",
+  "output": "CMakeFiles/muduocpp11.dir/src/CurrentThread.cc.o"
+},
+{
+  "directory": "/home/iwill/wly/MuduoCpp11/build",
+  "command": "/usr/bin/g++ -Dmuduocpp11_EXPORTS -I/home/iwill/wly/MuduoCpp11/include  -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/muduocpp11.dir/src/DefaultPoller.cc.o -c /home/iwill/wly/MuduoCpp11/src/DefaultPoller.cc",
+  "file": "/home/iwill/wly/MuduoCpp11/src/DefaultPoller.cc",
+  "output": "CMakeFiles/muduocpp11.dir/src/DefaultPoller.cc.o"
+},
+{
+  "directory": "/home/iwill/wly/MuduoCpp11/build",
+  "command": "/usr/bin/g++ -Dmuduocpp11_EXPORTS -I/home/iwill/wly/MuduoCpp11/include  -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/muduocpp11.dir/src/EpollPoller.cc.o -c /home/iwill/wly/MuduoCpp11/src/EpollPoller.cc",
+  "file": "/home/iwill/wly/MuduoCpp11/src/EpollPoller.cc",
+  "output": "CMakeFiles/muduocpp11.dir/src/EpollPoller.cc.o"
+},
+{
+  "directory": "/home/iwill/wly/MuduoCpp11/build",
+  "command": "/usr/bin/g++ -Dmuduocpp11_EXPORTS -I/home/iwill/wly/MuduoCpp11/include  -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/muduocpp11.dir/src/EventLoop.cc.o -c /home/iwill/wly/MuduoCpp11/src/EventLoop.cc",
+  "file": "/home/iwill/wly/MuduoCpp11/src/EventLoop.cc",
+  "output": "CMakeFiles/muduocpp11.dir/src/EventLoop.cc.o"
+},
+{
+  "directory": "/home/iwill/wly/MuduoCpp11/build",
+  "command": "/usr/bin/g++ -Dmuduocpp11_EXPORTS -I/home/iwill/wly/MuduoCpp11/include  -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/muduocpp11.dir/src/EventLoopThread.cc.o -c /home/iwill/wly/MuduoCpp11/src/EventLoopThread.cc",
+  "file": "/home/iwill/wly/MuduoCpp11/src/EventLoopThread.cc",
+  "output": "CMakeFiles/muduocpp11.dir/src/EventLoopThread.cc.o"
+},
+{
+  "directory": "/home/iwill/wly/MuduoCpp11/build",
+  "command": "/usr/bin/g++ -Dmuduocpp11_EXPORTS -I/home/iwill/wly/MuduoCpp11/include  -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/muduocpp11.dir/src/EventLoopThreadPool.cc.o -c /home/iwill/wly/MuduoCpp11/src/EventLoopThreadPool.cc",
+  "file": "/home/iwill/wly/MuduoCpp11/src/EventLoopThreadPool.cc",
+  "output": "CMakeFiles/muduocpp11.dir/src/EventLoopThreadPool.cc.o"
+},
+{
+  "directory": "/home/iwill/wly/MuduoCpp11/build",
+  "command": "/usr/bin/g++ -Dmuduocpp11_EXPORTS -I/home/iwill/wly/MuduoCpp11/include  -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/muduocpp11.dir/src/InetAddress.cc.o -c /home/iwill/wly/MuduoCpp11/src/InetAddress.cc",
+  "file": "/home/iwill/wly/MuduoCpp11/src/InetAddress.cc",
+  "output": "CMakeFiles/muduocpp11.dir/src/InetAddress.cc.o"
+},
+{
+  "directory": "/home/iwill/wly/MuduoCpp11/build",
+  "command": "/usr/bin/g++ -Dmuduocpp11_EXPORTS -I/home/iwill/wly/MuduoCpp11/include  -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/muduocpp11.dir/src/Logger.cc.o -c /home/iwill/wly/MuduoCpp11/src/Logger.cc",
+  "file": "/home/iwill/wly/MuduoCpp11/src/Logger.cc",
+  "output": "CMakeFiles/muduocpp11.dir/src/Logger.cc.o"
+},
+{
+  "directory": "/home/iwill/wly/MuduoCpp11/build",
+  "command": "/usr/bin/g++ -Dmuduocpp11_EXPORTS -I/home/iwill/wly/MuduoCpp11/include  -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/muduocpp11.dir/src/Poller.cc.o -c /home/iwill/wly/MuduoCpp11/src/Poller.cc",
+  "file": "/home/iwill/wly/MuduoCpp11/src/Poller.cc",
+  "output": "CMakeFiles/muduocpp11.dir/src/Poller.cc.o"
+},
+{
+  "directory": "/home/iwill/wly/MuduoCpp11/build",
+  "command": "/usr/bin/g++ -Dmuduocpp11_EXPORTS -I/home/iwill/wly/MuduoCpp11/include  -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/muduocpp11.dir/src/Socket.cc.o -c /home/iwill/wly/MuduoCpp11/src/Socket.cc",
+  "file": "/home/iwill/wly/MuduoCpp11/src/Socket.cc",
+  "output": "CMakeFiles/muduocpp11.dir/src/Socket.cc.o"
+},
+{
+  "directory": "/home/iwill/wly/MuduoCpp11/build",
+  "command": "/usr/bin/g++ -Dmuduocpp11_EXPORTS -I/home/iwill/wly/MuduoCpp11/include  -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/muduocpp11.dir/src/TcpConnection.cc.o -c /home/iwill/wly/MuduoCpp11/src/TcpConnection.cc",
+  "file": "/home/iwill/wly/MuduoCpp11/src/TcpConnection.cc",
+  "output": "CMakeFiles/muduocpp11.dir/src/TcpConnection.cc.o"
+},
+{
+  "directory": "/home/iwill/wly/MuduoCpp11/build",
+  "command": "/usr/bin/g++ -Dmuduocpp11_EXPORTS -I/home/iwill/wly/MuduoCpp11/include  -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/muduocpp11.dir/src/TcpServer.cc.o -c /home/iwill/wly/MuduoCpp11/src/TcpServer.cc",
+  "file": "/home/iwill/wly/MuduoCpp11/src/TcpServer.cc",
+  "output": "CMakeFiles/muduocpp11.dir/src/TcpServer.cc.o"
+},
+{
+  "directory": "/home/iwill/wly/MuduoCpp11/build",
+  "command": "/usr/bin/g++ -Dmuduocpp11_EXPORTS -I/home/iwill/wly/MuduoCpp11/include  -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/muduocpp11.dir/src/Thread.cc.o -c /home/iwill/wly/MuduoCpp11/src/Thread.cc",
+  "file": "/home/iwill/wly/MuduoCpp11/src/Thread.cc",
+  "output": "CMakeFiles/muduocpp11.dir/src/Thread.cc.o"
+},
+{
+  "directory": "/home/iwill/wly/MuduoCpp11/build",
+  "command": "/usr/bin/g++ -Dmuduocpp11_EXPORTS -I/home/iwill/wly/MuduoCpp11/include  -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/muduocpp11.dir/src/Timestamp.cc.o -c /home/iwill/wly/MuduoCpp11/src/Timestamp.cc",
+  "file": "/home/iwill/wly/MuduoCpp11/src/Timestamp.cc",
+  "output": "CMakeFiles/muduocpp11.dir/src/Timestamp.cc.o"
+}
+]
