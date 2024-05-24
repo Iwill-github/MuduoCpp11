@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "/home/iwill/wly/MuduoCpp11/lib/libmuduocpp.pdb"
+  "/home/iwill/wly/MuduoCpp11/lib/libmuduocpp.so"
+  "CMakeFiles/muduocpp.dir/src/Acceptor.cc.o"
+  "CMakeFiles/muduocpp.dir/src/Acceptor.cc.o.d"
+  "CMakeFiles/muduocpp.dir/src/Buffer.cc.o"
+  "CMakeFiles/muduocpp.dir/src/Buffer.cc.o.d"
+  "CMakeFiles/muduocpp.dir/src/Channel.cc.o"
+  "CMakeFiles/muduocpp.dir/src/Channel.cc.o.d"
+  "CMakeFiles/muduocpp.dir/src/CurrentThread.cc.o"
+  "CMakeFiles/muduocpp.dir/src/CurrentThread.cc.o.d"
+  "CMakeFiles/muduocpp.dir/src/DefaultPoller.cc.o"
+  "CMakeFiles/muduocpp.dir/src/DefaultPoller.cc.o.d"
+  "CMakeFiles/muduocpp.dir/src/EpollPoller.cc.o"
+  "CMakeFiles/muduocpp.dir/src/EpollPoller.cc.o.d"
+  "CMakeFiles/muduocpp.dir/src/EventLoop.cc.o"
+  "CMakeFiles/muduocpp.dir/src/EventLoop.cc.o.d"
+  "CMakeFiles/muduocpp.dir/src/EventLoopThread.cc.o"
+  "CMakeFiles/muduocpp.dir/src/EventLoopThread.cc.o.d"
+  "CMakeFiles/muduocpp.dir/src/EventLoopThreadPool.cc.o"
+  "CMakeFiles/muduocpp.dir/src/EventLoopThreadPool.cc.o.d"
+  "CMakeFiles/muduocpp.dir/src/InetAddress.cc.o"
+  "CMakeFiles/muduocpp.dir/src/InetAddress.cc.o.d"
+  "CMakeFiles/muduocpp.dir/src/Logger.cc.o"
+  "CMakeFiles/muduocpp.dir/src/Logger.cc.o.d"
+  "CMakeFiles/muduocpp.dir/src/Poller.cc.o"
+  "CMakeFiles/muduocpp.dir/src/Poller.cc.o.d"
+  "CMakeFiles/muduocpp.dir/src/Socket.cc.o"
+  "CMakeFiles/muduocpp.dir/src/Socket.cc.o.d"
+  "CMakeFiles/muduocpp.dir/src/TcpConnection.cc.o"
+  "CMakeFiles/muduocpp.dir/src/TcpConnection.cc.o.d"
+  "CMakeFiles/muduocpp.dir/src/TcpServer.cc.o"
+  "CMakeFiles/muduocpp.dir/src/TcpServer.cc.o.d"
+  "CMakeFiles/muduocpp.dir/src/Thread.cc.o"
+  "CMakeFiles/muduocpp.dir/src/Thread.cc.o.d"
+  "CMakeFiles/muduocpp.dir/src/Timestamp.cc.o"
+  "CMakeFiles/muduocpp.dir/src/Timestamp.cc.o.d"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/muduocpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

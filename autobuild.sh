@@ -15,21 +15,21 @@ cd ..       # 回到项目根目录
 
 
 #创建头文件目录
-if [ ! -d /usr/include/mymuduo ]; then
-    mkdir /usr/include/mymuduo
+if [ ! -d /usr/include/muduocpp11 ]; then
+    mkdir /usr/include/muduocpp11
 fi
 
 
-#把头文件拷贝到 /usr/include/mymuduo
+#把头文件拷贝到 /usr/include/muduocpp11
 cd include
 for header in `ls *.h`
 do
-    cp $header /usr/include/mymuduo
+    cp $header /usr/include/muduocpp11
 done
 cd ..
 
 #把so库拷贝到 /usr/lib
-cp `pwd`/lib/libmymuduo.so /usr/lib
+cp `pwd`/lib/libmuduocpp11.so /usr/lib
 
 
 # 更新动态链接库缓存
