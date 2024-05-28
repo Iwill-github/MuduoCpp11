@@ -20,7 +20,9 @@
         acceptor_
 
         threadPool_     subloop         -- 对应 subReactor
-        connections_
+        connections_    保存所有的TcpConnection
+
+        callbacks       用户设置的各种回调操作
 
     TcpServer 类功能梳理：
         （mainloop）acceptor相关的用户新连接回调的逻辑：

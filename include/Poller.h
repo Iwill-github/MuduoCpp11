@@ -10,6 +10,8 @@
 
 /*
     muduo 库中多路事件分发器的核心IO复用模块
+    Poller 类功能梳理：
+        1. Poller 多路IO复用监听多个fd，当监听到某个fd上有事件发生时，根据 ChannelMap 找到对应的 Channel（其封装了该fd）
 */ 
 class Poller{
 public:

@@ -12,14 +12,18 @@ class EventLoopThread;
 
 
 /*
+    EventLoopThreadPool 的主要成员变量：
+        baseLoop_                   对应着mainloop
+        getNextLoop()               通过轮询算法获取下一个subloop（如果没有设置工作线程个数，那么永远返回baseloop_，即监听客户端连接的loop）
+        threads_                    所有创建的线程指针
+        loops_                      所有创建的事件循环（所有的subloop）
+        
     EventLoopThreadPool 类的功能梳理：该类的功能主要是管理 EventLoopThread。
-        1. baseloop_ 不在 loops_ 中。
+        1. baseloop_ 不在 loops_ 中, baseloop_ 是在创建 EventLoopThreadPool时，传入的EventLoop对象。
         2. 如果没有用 setThreadNum 设置工作线程个数，那么 IO线程 和 工作线程 均为 baseloop_ 对应线程。
         3. 如果用 setThreadNum 设置了工作线程个数，那么 IO线程 为 baseloop_ 对应线程，工作线程为轮询出的subloop对应线程。
 
-    问题：
-        baseloop_ 好像是创建 EventLoopThreadPool 时，传入的 EventLoop*
-        在 EventLoopThreadPool 中，貌似没有其对应的线程？？
+
 */
 class EventLoopThreadPool: public noncopyable{
 public:

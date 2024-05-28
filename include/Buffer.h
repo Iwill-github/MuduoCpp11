@@ -8,13 +8,15 @@
 #include <algorithm>    // copy
 
 /*
-@code
-+--------------------+--------------------+--------------------+
-| prependable bytes  |   readable bytes   |    writable bytes  |
-|                    |     (CONTENT)      |                    |
-+--------------------+--------------------+--------------------+
-|                    |                    |                    |
-0         <=     readerIndex          writerIndex   <=       size
+    @code
+    +--------------------+--------------------+--------------------+
+    | prependable bytes  |   readable bytes   |    writable bytes  |
+    |                    |     (CONTENT)      |                    |
+    +--------------------+--------------------+--------------------+
+    |                    |                    |                    |
+    0         <=     readerIndex          writerIndex   <=       size
+
+    应用写数据 -> 缓冲区 -> Tcp发送缓冲区 -> 网络发送缓冲区 -> TCP发送
 */
 class Buffer: public noncopyable {
 public:

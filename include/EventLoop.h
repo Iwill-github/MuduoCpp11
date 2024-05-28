@@ -16,8 +16,9 @@ class Poller;
 
 /* 
     EventLoop 主要成员变量：
-        poller_             # 每个EventLoop事件循环包含一个io复用Poller,每个 Poller监听多个Channel
-        wakeupFd_
+        poller_             # 每个EventLoop事件循环包含的一个io复用Poller,每个 Poller监听多个Channel
+        activateChannles_   # 所有的channel
+        wakeupFd_           # 该loop对应的fd，如果有写事件发生(自定义的协议)，则唤醒该loop，从而在该loop上执行回调操作
         wakeupChannel_
 
     EventLoop 类的功能梳理：

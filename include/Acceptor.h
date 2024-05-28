@@ -13,7 +13,7 @@ class InetAddress;
     Acceptor 类功能梳理：
         Acceptor 是对 listenfd 的封装，主要是为了返回 connfd，同时 TcpServer => Acceptor => channel
         1. 之所以依赖 loop_ ，是因为其主要运行在 baseloop 中，即 mainReactor 中。
-        2. 设置 listenfd 为监听状态；
+        2. 封装bind、listen操作，设置 listenfd 为监听状态；
         3. 设置 listenfd 对应的 acceptChannel_ 的事件回调（ReadCallback）和 handleRead 函数绑定
            在handleRead函数中调用的 newConnectionCallback_ 回调，该回调实际上是在 TcpServer 中进行绑定注册的。
 */

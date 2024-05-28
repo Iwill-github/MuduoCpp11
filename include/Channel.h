@@ -11,17 +11,23 @@ class Timestamp;
 
 
 /*
-    1. Channel 类的功能梳理：
+    1. Channel 类的功能梳理（Demultiplex）：
         * 在Linux网络编程中，Channel类通常用于表示一个文件描述符（如套接字），封装了 
-            socketfd（本质上是一个 读写事件fd）、
-            event（感兴趣事件，如 EPOLLIN，EPOLLOUT事件）、
-            revents（poller返回的触发事件）
-            Callback（事件对应的回调操作）
+            socketfd    需要向poller上注册的文件描述符、
+            event       socketfd 上的感兴趣事件，如 EPOLLIN，EPOLLOUT事件、
+            revents     poller 返回的触发事件、
+            callbacks   一些列事件对应的回调操作、
+            loop        该channel所在的事件循环、
+        * 描述叙述：
+            muduo库中，无论是对服务端监听的fd(listenfd)，还是客户端连接成功后返回的通信fd(connfd)，
+            都会封装上述信息作为一个channel(acceptorChannel、connectionChannel)，然后设置相应的感兴趣事件，同时注册到poller上。
         * 如何更改 channel 对应 fd 的感兴趣事件？
             Channel => EventLoop => Poller
+
     2. EventLoop、ChannnelList、Poller之间的关系   (它们在Reactor模型上对应 Demultiplex)
         1. 1个EventLoop是1个事件循环，1个事件循环是跑在一个线程里
         2. 1个EventLoop对应1个Poller，1个Poller对应多个Channel即ChannelList
+
 */
 class Channel: public noncopyable{
 public:

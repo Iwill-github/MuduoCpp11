@@ -10,7 +10,7 @@
 #include <atomic>
 
 /*
-    EventLoop 类的功能梳理：
+    Thread 类的功能梳理：
         记录了一个新线程的详细信息。
 */
 

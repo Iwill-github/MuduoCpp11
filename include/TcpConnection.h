@@ -16,7 +16,20 @@ class EventLoop;
 class Socket;
 
 
-/*
+/*  TcpConnection类的主要成员：
+        socket_             # 客户端通信信息
+        channel_
+        localAddr_
+        peerAddr_
+        
+        loop_               # channel所在的事件循环（subloop）
+
+        callbacks          # TcpServer中注册的各种回调操作
+
+        inputBuffer_        # 发送缓冲区相关
+        outputBuffer_
+        highWaterMark_
+
     TcpConnection类功能梳理：
         1. TcpConnection 用来打包成功连接客户端的通信链路。socket_、channel_
         2. TcpServer => Acceptor => TcpConnection => Channel => Poller
