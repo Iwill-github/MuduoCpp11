@@ -16,6 +16,8 @@ class InetAddress;
         2. 封装bind、listen操作，设置 listenfd 为监听状态；
         3. 设置 listenfd 对应的 acceptChannel_ 的事件回调（ReadCallback）和 handleRead 函数绑定
            在handleRead函数中调用的 newConnectionCallback_ 回调，该回调实际上是在 TcpServer 中进行绑定注册的。
+           setReadCallback => handleRead => newConectionCallback
+           acceptor.setNewConnectionCallback => TcpServer::newConnection
 */
 class Acceptor: public noncopyable{
 public:

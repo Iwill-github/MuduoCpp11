@@ -26,7 +26,7 @@ EventLoopThread::~EventLoopThread(){
         开启一个新线程，单独执行一个loop对象，并返回该loop对象的地址
 */
 EventLoop* EventLoopThread::startLoop(){
-    thread_.start();            // 开启一个新线程，执行 threadFunc
+    thread_.start();                // 开启一个新线程，执行 threadFunc
 
     EventLoop* loop = nullptr;
     {

@@ -29,7 +29,7 @@
             TcpServer => Acceptor => channel => Poller
             Poller监听到读事件，执行TcpServer::newConnection回调函数
 
-        （subloop）用户连接事件回调的逻辑：
+        （subloop）用户连接 事件回调的逻辑：
             TcpServer => TcpConnection => channel => Poller
 */
 

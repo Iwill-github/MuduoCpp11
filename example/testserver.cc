@@ -57,7 +57,11 @@ int main(){
     InetAddress addr(8002);
     EchoServer server(&loop, addr, "EchoServer");   // Acceptor、non-blocking listenfd、create、bind
 
-    server.start();     // listen、loopthread、listenfd => acceptChannel => mainloop
+    /*
+        listen、loopthread、listenfd => acceptChannel => mainloop。
+        同时启动subloop线程池 threadPool，注册wakeupfd，并开启子线程的 poller  loop.loop()
+    */
+    server.start();     
     loop.loop();        // 启动 mainloop 的底层 poller
 
     return 0;

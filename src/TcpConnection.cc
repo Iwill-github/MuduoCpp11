@@ -142,12 +142,14 @@ void TcpConnection::sendInLoop(const void* data, size_t len){
 void TcpConnection::connectEstablished(){
     setState(kConnected);
     // shared_from_this() 表示从一个对象内部获取指向该对象的 shared_ptr 实例
+    // channel的回调函数是TcpConnection注册的。当TcpConnection析构时，channel对应的回调函数还执行么？
+    // 解决办法：通过弱智能指针的提升，来检测TcpConnection对象是否还存活
     channel_->setTie(shared_from_this());       // 使用弱智能指针，TcpConnection对象被remove后，依然执行channel_对应的回调
     channel_->enableReading();                  // 向poller注册channel的eventin事件
 
     // 新连接建立，执行新连接建立回调
     connectionCallback_(shared_from_this());
-}   
+}
 
 
 // 连接销毁 
