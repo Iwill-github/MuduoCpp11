@@ -31,7 +31,6 @@ void Logger::log(std::string msg){
         break;
     }
 
-    // 打印文件名、函数名、行号、时间和msg
-    std::cout << __FILE__ << " : " << __FUNCTION__ << " : " << __LINE__ << " => ";
+    // 打印时间和msg
     std::cout << Timestamp::now().toString() << " : " << msg << std::endl;
 }
