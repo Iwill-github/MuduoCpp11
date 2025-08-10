@@ -18,24 +18,24 @@ gdb相关
 
 
 source insight使用简单记录
-    1. 项目文件下，创建 xx_insight 目录
-    2. 设置项目名称、项目路径
-    3. Option -> File Type Options 添加 *.cc
-    4. 选择带查看的文件夹目录 -> Add tree -> close
-    5. Project -> Synchronize Files
-    6. 左下角  -> 浏览项目符号
-    7. ctrl + 鼠标左键  ->  跳转到对应文件
-    8. Options -> Key Assignments -> 搜索high -> 添加/设置快捷键
+1. 项目文件下，创建 xx_insight 目录
+2. 设置项目名称、项目路径
+3. Option -> File Type Options 添加 *.cc
+4. 选择带查看的文件夹目录 -> Add tree -> close
+5. Project -> Synchronize Files
+6. 左下角  -> 浏览项目符号
+7. ctrl + 鼠标左键  ->  跳转到对应文件
+8. Options -> Key Assignments -> 搜索high -> 添加/设置快捷键
 
 
 扩展
-    1. TcpClient 类
-    2. 支持定时事件 TimeQueue     链表/队列  事件轮(libevent)    nginx定时器（红黑树）
-    3. DNS、HTTP、RPC
-    4. 丰富的使用示例 examples
-    5. 服务器性能测试 - QPS, Queries Per Second     需要重设置linux进程的socketfd上限
-        wrk         linux上，需要单独编译安装，只能测试http服务的性能
-        jmeter      需要安装 JDK 运行环境，可以测试http服务 tcp服务 生成聚合报告
+1. TcpClient 类
+2. 支持定时事件 TimeQueue     链表/队列  事件轮(libevent)    nginx定时器（红黑树）
+3. DNS、HTTP、RPC
+4. 丰富的使用示例 examples
+5. 服务器性能测试 - QPS, Queries Per Second     需要重设置linux进程的socketfd上限
+   * wrk         linux上，需要单独编译安装，只能测试http服务的性能
+   * jmeter      需要安装 JDK 运行环境，可以测试http服务 tcp服务 生成聚合报告
 
 
 
