@@ -1,18 +1,19 @@
 
 # MuduoCpp11
-仿muduo库（c++11，不依赖boost库）
+This repositoriey is implemented by imitating the muduo library (c++11, not relying on the boost library)
 
-# 1. 编译该项目
+
+# 1. 1. Compile
 ```bash
 sudo sh automake.sh
 ```
 
-# 2. 测试该项目
+# 2. Test
 ```bash
 cd example
 make
-./testserver                # 启动服务器
-telnet 127.0.0.1 8002       # 模拟客户端连接
+./testserver                # Start the server
+telnet 127.0.0.1 8002       # Simulate client connection
 ```
 
 <img src="./imgs/test.png" alt="image-test" />
