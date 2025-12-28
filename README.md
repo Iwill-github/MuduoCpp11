@@ -3,7 +3,7 @@
 This repositoriey is implemented by imitating the muduo library (c++11, not relying on the boost library)
 
 
-# 1. 1. Compile
+# 1. Compile
 ```bash
 sudo sh automake.sh
 ```
