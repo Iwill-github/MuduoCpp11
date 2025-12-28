@@ -2,12 +2,12 @@
 # MuduoCpp11
 仿muduo库（c++11，不依赖boost库）
 
-# 编译该项目
+# 1. 编译该项目
 ```bash
 sudo sh automake.sh
 ```
 
-# 测试该项目
+# 2. 测试该项目
 ```bash
 cd example
 make
